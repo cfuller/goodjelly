@@ -1,0 +1,64 @@
+networks:
+  wp-network:
+    external: true
+
+volumes:
+  mariadb-data:
+  wp-data:
+
+services:
+  mariadb:
+    image: ${WORDPRESS_MARIADB_IMAGE_TAG}
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    environment:
+      MARIADB_DATABASE: ${WORDPRESS_DB_NAME}
+      MARIADB_USER: ${WORDPRESS_DB_USER}
+      MARIADB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${WORDPRESS_DB_ADMIN_PASSWORD}
+    networks:
+      - wp-network
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+
+  wordpress:
+    image: ${WORDPRESS_IMAGE_TAG}
+    volumes:
+      - ./wp_data:/var/www/html
+      - ./upload.ini:/usr/local/etc/php/conf.d/uploads.ini
+    environment:
+      WORDPRESS_DB_HOST: mariadb
+      WORDPRESS_DB_PORT_NUMBER: 3306
+      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
+      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
+      WORDPRESS_TABLE_PREFIX: ${WORDPRESS_TABLE_PREFIX}
+      WORDPRESS_BLOG_NAME: ${WORDPRESS_BLOG_NAME}
+      WORDPRESS_FIRST_NAME: ${WORDPRESS_ADMIN_NAME}
+      WORDPRESS_LAST_NAME: ${WORDPRESS_ADMIN_LASTNAME}
+      WORDPRESS_USERNAME: ${WORDPRESS_ADMIN_USERNAME}
+      WORDPRESS_PASSWORD: ${WORDPRESS_ADMIN_PASSWORD}
+      WORDPRESS_EMAIL: ${WORDPRESS_ADMIN_EMAIL}
+      WORDPRESS_SMTP_HOST: ${WORDPRESS_SMTP_ADDRESS}
+      WORDPRESS_SMTP_PORT: ${WORDPRESS_SMTP_PORT}
+      WORDPRESS_SMTP_USER: ${WORDPRESS_SMTP_USER_NAME}
+      WORDPRESS_SMTP_PASSWORD: ${WORDPRESS_SMTP_PASSWORD}
+    ports:
+      - 8080:80
+    networks:
+      - wp-network
+    healthcheck:
+      test: timeout 10s bash -c ':> /dev/tcp/127.0.0.1/8080' || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 90s
+    restart: unless-stopped
+    depends_on:
+      mariadb:
+        condition: service_healthy
