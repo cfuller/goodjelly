@@ -30,7 +30,7 @@ services:
     image: ${WORDPRESS_IMAGE_TAG}
     volumes:
       - ./wp_data:/var/www/html
-      - ./upload.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     environment:
       WORDPRESS_DB_HOST: mariadb
       WORDPRESS_DB_PORT_NUMBER: 3306

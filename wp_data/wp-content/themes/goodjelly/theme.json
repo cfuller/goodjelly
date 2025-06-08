@@ -1,0 +1,259 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "background": true,
+      "link": true,
+      "text": true,
+      "custom": true,
+      "customDuotone": true,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "palette": [
+        {
+          "color": "#ffffff",
+          "name": "Base",
+          "slug": "base"
+        },
+        {
+          "color": "#3c3a41",
+          "name": "Contrast",
+          "slug": "contrast"
+        },
+        {
+          "color": "#f8fbf3",
+          "name": "Background Green",
+          "slug": "background-green"
+        },
+        {
+          "color": "#391255",
+          "name": "Button Purple",
+          "slug": "button-purple"
+        },
+        {
+          "color": "#881788",
+          "name": "Button Purple Hover",
+          "slug": "button-purple-hover"
+        },
+        {
+          "color": "#b6b0c5",
+          "name": "Border Color",
+          "slug": "border-color"
+        },
+        {
+          "color": "#efefef",
+          "name": "Light Border",
+          "slug": "light-border"
+        },
+        {
+          "color": "#ebd1b6",
+          "name": "Box Border 1",
+          "slug": "box-border-1"
+        },
+        {
+          "color": "#d4e9b5",
+          "name": "Box Border 2",
+          "slug": "box-border-2"
+        },
+        {
+          "color": "#d9c4ec",
+          "name": "Box Border 3",
+          "slug": "box-border-3"
+        }
+      ]
+    },
+    "dimensions": {
+      "minHeight": true
+    },
+    "layout": {
+      "contentSize": "1365px"
+    },
+    "position": {
+      "sticky": true
+    },
+    "spacing": {
+      "blockGap": true,
+      "margin": true,
+      "padding": true,
+      "customSpacingSize": true,
+      "units": ["px", "rem", "vh", "vw", "%"]
+    },
+    "typography": {
+      "lineHeight": true,
+      "fluid": true,
+      "fontSizes": [
+        {
+          "name": "Small",
+          "slug": "small",
+          "size": "1.3rem",
+          "fluid": {
+            "min": "1rem",
+            "max": "1.3rem"
+          }
+        },
+        {
+          "name": "Medium",
+          "slug": "medium",
+          "size": "1.8rem",
+          "fluid": {
+            "min": "1rem",
+            "max": "1.8rem"
+          }
+        },
+        {
+          "name": "Large",
+          "slug": "large",
+          "size": "2.3rem",
+          "fluid": {
+            "min": "1rem",
+            "max": "2.3rem"
+          }
+        },
+        {
+          "name": "Extra Large",
+          "slug": "x-large",
+          "size": "3rem",
+          "fluid": {
+            "min": "2rem",
+            "max": "3rem"
+          }
+        }
+      ],
+      "fontFamilies": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "fontFamily": "'Hanken Grotesk', sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Hanken Grotesk",
+              "fontStyle": "normal",
+              "fontWeight": "100 900",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/HankenGrotesk-VariableFont_wght.woff2"]
+            },
+                        {
+              "fontFamily": "Hanken Grotesk",
+              "fontStyle": "italic",
+              "fontWeight": "100 900",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/HankenGrotesk-Italic-VariableFont_wght.woff2"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "text": "var:preset|color|contrast"
+    },
+    "elements": {
+      "h1": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--primary)",
+          "fontSize": "clamp(2rem, 2.7rem, 8vw)",
+          "fontWeight": "300"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--primary)",
+          "fontSize": "clamp(1rem, 2.3rem, 6vw)",
+          "fontWeight": "300"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--primary)",
+          "fontSize": "clamp(1rem, 1.8rem, 5vw)",
+          "fontWeight": "300"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var:preset|color|contrast"
+        },
+        ":hover": {
+          "color": {
+            "text": "var:preset|color|button-purple"
+          },
+          "typography": {
+            "textDecoration": "underline",
+            "fontFamily": "var(--wp--preset--font-family--primary)",
+            "fontSize": "clamp(1rem, 1.3rem, 5vw)",
+            "fontWeight": "300"
+          }
+        },
+        "typography": {
+          "textDecoration": "none",
+          "fontFamily": "var(--wp--preset--font-family--primary)",
+          "fontSize": "clamp(1rem, 1.3rem, 5vw)",
+          "fontWeight": "300"
+        }
+      }
+    },
+    "blocks": {
+      "core/paragraph": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--primary)",
+          "fontSize": "clamp(1rem, 1.1rem, 4vw)",
+          "fontWeight": "300"
+        }
+      },
+      "core/button": {
+        "color": {
+          "background": "var:preset|color|button-purple",
+          "text": "var:preset|color|base"
+        },
+        "border": {
+          "radius": "20px"
+        },
+        ":hover": {
+          "color": {
+            "background": "var:preset|color|button-purple-hover",
+            "text": "var:preset|color|base"
+          }
+        }
+      },
+      "core/group": {
+        "spacing": {
+          "padding": {
+            "top": "1rem",
+            "right": "2rem",
+            "bottom": "1rem",
+            "left": "2rem"
+          }
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "area": "header",
+      "name": "header",
+      "title": "Header"
+    },
+    {
+      "area": "footer",
+      "name": "footer",
+      "title": "Footer"
+    },
+    {
+      "area": "uncategorized",
+      "name": "home-hero",
+      "title": "Hero"
+    }
+  ],
+  "patterns": [
+    "goodjelly/nav",
+    "goodjelly/home-section-1",
+    "goodjelly/home-section-2",
+    "goodjelly/home-section-3",
+    "goodjelly/home-section-4"
+  ]
+}

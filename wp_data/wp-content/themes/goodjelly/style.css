@@ -1,0 +1,344 @@
+/**
+* Theme Name: Goodjelly
+* Version:    0.1
+* Author:     Chris Fuller
+* Tags:       block-patterns, full-site-editing
+*/
+
+
+
+/** Backgrounds **/
+.home-green {
+  background-color: #f8fbf3;
+}
+
+.home-white {
+  background-color: #fff;
+}
+
+.hero-wrapper {
+  background: url(assets/images/hero-bg.png) no-repeat;
+  margin: 0;
+  min-height: 375px;
+  background-size: 24rem;
+  background-position: 7px 85px;
+}
+
+@media screen and (min-width: 760px) {
+  .hero-wrapper {
+    min-height: 33rem;
+    background-size: auto;
+    background-position: 1rem 5rem;
+  }
+}
+
+.home-green,
+.home-white,
+.hero-wrapper {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #efefef;
+}
+
+.home-1 {
+  background-image: url("assets/images/home-bg-1.png");
+  background-repeat: no-repeat;
+  background-size: 35rem;
+}
+
+.home-2 {
+  background-image: url("assets/images/home-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: 35rem;
+  background-position: right;
+}
+
+.home-3 {
+  background-image: url("assets/images/home-bg-3.png");
+  background-repeat: no-repeat;
+  background-size: 39rem;
+  background-position-x: 240%;
+}
+
+.home-4 {
+  background-image: url("assets/images/home-bg-4.png");
+  background-repeat: no-repeat;
+  background-size: 35rem;
+  background-position: right;
+}
+
+@media screen and (min-width: 760px) {
+  .home-1,
+  .home-2,
+  .home-3 {
+    background-size: auto;
+  }
+  .home-4 {
+    background-size: 45rem;
+    background-position: 100% 10;
+  }
+}
+
+.photo-background {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding: 2px;
+  background-color: #b6b0c5;
+  border-radius: 20px;
+  height: 8rem;
+  width: 6rem;
+}
+
+@media screen and (min-width: 760px) {
+  .photo-background {
+    height: 25rem;
+    width: 20rem;
+  }
+}
+
+.header-git {
+  background-image: url(assets/images/md-pink-blob.png), url(assets/images/header-white-bg.png);
+  background-position: 13px 0px, top left;
+  background-repeat: no-repeat, repeat-x;
+  background-color: #f8fbf3;
+  height: clamp(5rem, -0.1rem + 14.922vi, 13rem);
+  padding-top: clamp(0rem, -2.073rem + 10.30vi, 9rem);
+  padding-left: clamp(1rem, .2rem + 14.922vi, 11rem);
+  background-size: 19%, 74%;
+}
+
+.get-in-touch-wrapper {
+  background-image: url(assets/images/md-green-blob.png), url(assets/images/sm-purple-blob.png), url(assets/images/md-pink-blob.png);
+  background-repeat: no-repeat;
+  background-position: 72% 0%, 82% 13%, 95% 60%;
+  background-size: 10%, 5%, 18%;
+}
+
+.header-about {
+  background-image: url(assets/images/md-orange-blob.png), url(assets/images/header-white-bg.png);
+  background-position: 13px 0px, top left;
+  background-repeat: no-repeat, repeat-x;
+  background-color: #f8fbf3;
+  height: clamp(5rem, -0.1rem + 14.922vi, 12rem);
+  padding-top: clamp(0rem, -2.073rem + 10.30vi, 9rem);
+  padding-left: clamp(1rem, -.6rem + 14.922vi, 12.5rem);
+  background-size: 19%, 74%;
+}
+
+/** Fonts **/
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+/** Interaction **/
+button {
+  cursor: pointer;
+}
+
+a.cta {
+  background-color: #391255;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  display: inline-block;
+  margin: 4px 2px;
+}
+
+a.cta:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #881788;
+}
+
+a.header-button {
+  margin-left: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #391255;
+  text-decoration: underline;
+}
+
+.footer-link a span {
+  color: #ffffff;
+  font-size: clamp(1rem, 1.2rem, 2rem);
+}
+
+/** Icons/Widgets **/
+.purple-lines {
+  max-width: 1050px;
+  margin: auto;
+  gap: 1rem;
+  /* grid-template-columns: auto auto auto; */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));;
+}
+
+.purple-line-asset {
+  border: 1px solid #efefef;
+  background: #fff;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-top: 2rem;
+  min-height: 27rem;
+}
+
+.purple-line-asset-1 {
+  border: 1px solid #ebd1b6;
+}
+
+.purple-line-asset-2 {
+  border: 1px solid #d4e9b5;
+}
+
+.purple-line-asset-3 {
+  border: 1px solid #d9c4ec;
+}
+
+@media screen and (min-width: 760px) {
+  .christine-pullquote {
+    margin-left: 3rem;
+    align-self: center;
+    max-width: 35rem;
+  }
+}
+
+.framework-icon {
+  align-self: center;
+  width: 130%;
+  margin-right: 0.5rem;
+}
+
+.framework-icon > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+  .framework-icon {
+    width: auto;
+    margin-right: 2rem;
+  }
+
+  .framework-icon > img {
+    width: 17rem;
+  }
+}
+
+.path-diagram {
+  width: 100%;
+  max-width: 800px;
+  border: 2px solid #efefef;
+  border-radius: 37px;
+  background: #fff;
+}
+
+/** Layout **/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+  main.wp-block-group-is-layout-flow {
+    padding: 0;
+  }
+
+@media screen and (min-width: 760px) {
+  main.wp-block-group-is-layout-flow {
+    padding: unset;
+  }
+}
+
+nav {
+  padding-top: 0.5rem;
+  align-items: center;
+  border: 0;
+}
+
+.hero {
+  margin-top: 4rem;
+}
+
+.content-wrapper {
+  box-shadow: 10px 10px 10px #efefef, -10px 0 10px #efefef;
+}
+
+@media screen and (min-width: 760px) {
+  .home-block-container {
+    max-width: 1050px;
+    margin: auto;
+  }
+}
+
+footer.wp-block-template-part {
+  margin-block-start:0 !important;
+}
+
+/** Nav **/
+li:has(div.topnav) {
+  flex-grow: 1;
+}
+
+.topnav-button a {
+  background-color: #391255;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  display: inline-block;
+  margin: 4px 2px;
+}
+
+.topnav-button a span {
+  color: #ffffff;
+}
+
+/** Utility **/
+.vspace-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.vspace-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.vspace-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mw-750 {
+  max-width: 750px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-col,
+.flex-row-r {
+  flex-direction: column;
+}
+
+.flex-grid {
+  display: grid
+}
+
+@media screen and (min-width: 760px) {
+  .flex-row-r {
+    flex-direction: row;
+  }
+}

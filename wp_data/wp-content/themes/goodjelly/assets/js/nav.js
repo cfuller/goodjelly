@@ -1,30 +1,25 @@
-const nav = document.getElementById('topnav')
-const hamburger = document.getElementById('navburger')
-const header = document.getElementById('nav-wrapper')
+document.addEventListener('DOMContentLoaded', function() {
+  const navburger = document.getElementById('navburger');
+  const topnav = document.getElementById('topnav');
+  const navWrapper = document.getElementById('nav-wrapper');
 
-nav.addEventListener('click', handleNav)
-hamburger.addEventListener('click', handleNav)
+  if (navburger && topnav && navWrapper) {
+    // Toggle navigation menu on mobile
+    navburger.addEventListener('click', function() {
+      topnav.classList.toggle('topnav--active');
+      navburger.classList.toggle('navburger--active');
+      navWrapper.classList.toggle('nav-wrapper--active');
+    });
 
-function handleNav(e) {
-  e.stopPropagation();
-  if(!nav.classList.contains('topnav--active')){
-    nav.classList.add('topnav--active')
-    hamburger.classList.add('navburger--active')
-    header.classList.add('nav-wrapper--active')
-  } else {
-    nav.classList.remove('topnav--active')
-    hamburger.classList.remove('navburger--active')
-    header.classList.remove('nav-wrapper--active')
+    // Add scrolling class to navigation
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 10) {
+        navWrapper.classList.add('nav-wrapper--scrolling');
+        topnav.classList.add('topnav--scrolling');
+      } else {
+        navWrapper.classList.remove('nav-wrapper--scrolling');
+        topnav.classList.remove('topnav--scrolling');
+      }
+    });
   }
-}
-
-document.addEventListener('scroll', handleScroll)
-
-function handleScroll(e) {
-  let scrollPos = window.pageYOffset;
-  if (scrollPos > 10) {
-    header.classList.add('nav-wrapper--scrolling')
-  } else {
-    header.classList.remove('nav-wrapper--scrolling')
-  }
-}
+});

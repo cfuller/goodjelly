@@ -1,0 +1,40 @@
+/**
+* Theme Name: Goodjelly 2025
+* Template:   twentytwentyfour
+* Version:    0.1
+* Author:     Chris Fuller
+* Tags:       block-patterns, full-site-editing
+*/
+
+/* Layout */
+.home-creative-future {
+  max-width: 28%;
+}
+
+.home-three-blocks {
+  max-width: clamp(600px, 70%, 81%);
+}
+
+
+/* Nav */
+
+.topnav-button a {
+  background-color: #391255;
+  border-radius: 20px;
+  color: #fff !important;
+  padding: 10px 20px;
+  border: none;
+  display: inline-block;
+  margin: 4px 2px;
+}
+
+/* Fonts */
+
+span.highlight {
+  color: var(--wp--preset--color--goodjelly-mauve);
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 600;
+}
