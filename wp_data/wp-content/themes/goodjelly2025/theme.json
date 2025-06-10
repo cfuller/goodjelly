@@ -48,7 +48,12 @@
           "color": "#b8517f",
           "name": "Goodjelly Mauve",
           "slug": "goodjelly-mauve"
-        }
+        },
+	{
+	  "color": "#fff1f7",
+	  "name" : "Goodjelly Peach",
+	  "slug" : "goodjelly-peach"
+	}
       ]
     },
     "spacing": {
