@@ -68,21 +68,42 @@
         {
           "name": "Primary",
           "slug": "primary",
-          "fontFamily": "'Cabin', sans-serif",
+          "fontFamily": "'HK Grotesk', sans-serif",
           "fontFace": [
             {
-              "fontFamily": "Cabin",
+              "fontFamily": "HK Grotesk",
               "fontStyle": "normal",
               "fontWeight": "100 900",
               "fontDisplay": "swap",
-              "src": ["file:./assets/fonts/Cabin-VariableFont.woff2"]
+              "src": ["file:./assets/fonts/HankenGrotesk-VariableFont.woff2"]
             },
                         {
-              "fontFamily": "Cabin",
+              "fontFamily": "HK Grotesk",
               "fontStyle": "italic",
               "fontWeight": "100 900",
               "fontDisplay": "swap",
-              "src": ["file:./assets/fonts/Cabin-Italic-VariableFont.woff2"]
+              "src": ["file:./assets/fonts/HankenGrotesk-Italic-VariableFont.woff2"]
+            }
+          ]
+        },
+        {
+          "name": "Header",
+          "slug": "header",
+          "fontFamily": "'Lora', serif",
+          "fontFace": [
+            {
+              "fontFamily": "Lora",
+              "fontStyle": "normal",
+              "fontWeight": "100 900",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/Lora.woff2"]
+            },
+                        {
+              "fontFamily": "Lora",
+              "fontStyle": "italic",
+              "fontWeight": "100 900",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/Lora-Italic.woff2"]
             }
           ]
         }

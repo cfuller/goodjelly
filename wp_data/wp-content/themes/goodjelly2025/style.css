@@ -16,13 +16,12 @@
 }
 
 @media screen and (min-width: 760px) {
-.contact-social-callout {
-  position: absolute;
-  right: 0;
-  width: 34%;
+  .contact-social-callout {
+    position: absolute;
+    right: 0;
+    width: 34%;
+  }
 }
-}
-
 
 /* Nav */
 
@@ -46,4 +45,3 @@ span.highlight {
 strong {
   font-weight: 600;
 }
-
