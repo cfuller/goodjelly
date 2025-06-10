@@ -75,14 +75,14 @@
               "fontStyle": "normal",
               "fontWeight": "100 900",
               "fontDisplay": "swap",
-              "src": ["file:./assets/fonts/HankenGrotesk-VariableFont.woff2"]
+              "src": ["file:./assets/fonts/HankenGrotesk-VariableFont_wght.woff2"]
             },
                         {
               "fontFamily": "HK Grotesk",
               "fontStyle": "italic",
               "fontWeight": "100 900",
               "fontDisplay": "swap",
-              "src": ["file:./assets/fonts/HankenGrotesk-Italic-VariableFont.woff2"]
+              "src": ["file:./assets/fonts/HankenGrotesk-Italic-VariableFont_wght.woff2"]
             }
           ]
         },
