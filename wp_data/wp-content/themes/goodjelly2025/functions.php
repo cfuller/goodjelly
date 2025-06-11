@@ -16,3 +16,14 @@ function custom_year_shortcode () {
   return date_i18n('Y');
 }
 add_shortcode ('year', 'custom_year_shortcode');
+
+function spacer_with_border() {
+  register_block_style(
+    'core/spacer',
+    array(
+      'name' => 'top-border',
+      'label' => __('Separator Border', 'goodjelly2025')
+    )
+  );
+}
+add_action('init', 'spacer_with_border');
