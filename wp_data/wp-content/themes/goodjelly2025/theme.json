@@ -94,21 +94,21 @@
         {
           "name": "Header",
           "slug": "header",
-          "fontFamily": "'Lora', serif",
+          "fontFamily": "'Playfair Display', serif",
           "fontFace": [
             {
-              "fontFamily": "Lora",
+              "fontFamily": "Playfair Display",
               "fontStyle": "normal",
               "fontWeight": "100 900",
               "fontDisplay": "swap",
-              "src": ["file:./assets/fonts/Lora.woff2"]
+              "src": ["file:./assets/fonts/Playfair-Display.woff2"]
             },
                         {
-              "fontFamily": "Lora",
+              "fontFamily": "Playfair Display",
               "fontStyle": "italic",
               "fontWeight": "100 900",
               "fontDisplay": "swap",
-              "src": ["file:./assets/fonts/Lora-Italic.woff2"]
+              "src": ["file:./assets/fonts/PlayfairDisplay-Italic.woff2"]
             }
           ]
         }
