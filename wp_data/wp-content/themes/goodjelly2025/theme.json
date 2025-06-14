@@ -116,6 +116,26 @@
     }
   },
   "styles": {
+    "blocks": {
+      "core/spacer": {
+        "variations": {
+          "top-border": {
+            "border": {
+              "top": {
+                "color": "#efefef",
+                "style": "solid",
+                "width": "1px"
+              }
+            },
+            "shadow": "0 -2px 6px -1px #efefef",
+            "spacing" : {
+              "blockGap": "0"
+            },
+            "css": "position: relative; margin-block-start: 0;"
+          }
+        }
+      }
+    },
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--primary)"
     },
