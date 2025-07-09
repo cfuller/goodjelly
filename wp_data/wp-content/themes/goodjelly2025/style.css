@@ -23,6 +23,10 @@
   }
 }
 
+footer {
+  margin-block-start: 0 !important;
+}
+
 /* Nav */
 
 .topnav-button a {
