@@ -48,6 +48,11 @@
           "color": "#c48da2",
           "name": "Berry Fog",
           "slug": "berry-fog"
+        },
+        {
+          "color": "#faf7fc",
+          "name": "Grape Glow",
+          "slug": "grape-glow"
         }
       ]
     },
