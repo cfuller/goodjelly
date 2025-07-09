@@ -53,6 +53,37 @@
           "color": "#faf7fc",
           "name": "Grape Glow",
           "slug": "grape-glow"
+        },
+        ,
+        {
+          "color": "#d9c4ec",
+          "name": "Grape Dollop",
+          "slug": "grape-dollop"
+        },
+        {
+          "color": "#c4e49a",
+          "name": "Apple Dollop",
+          "slug": "apple-dollop"
+        },
+        {
+          "color": "#ffb79a",
+          "name": "Peach Dollop",
+          "slug": "peach-dollop"
+        },
+        {
+          "color": "#f4c3d4",
+          "name": "Raspberry Dollop",
+          "slug": "raspberry-dollop"
+        },
+        {
+          "color": "#bce9eb",
+          "name": "Blueberry Dollop",
+          "slug": "blueberry-dollop"
+        },
+        {
+          "color": "#fff4a5",
+          "name": "Lemon Dollop",
+          "slug": "lemon-dollop"
         }
       ]
     },
