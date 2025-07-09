@@ -16,44 +16,39 @@
       "palette": [
         {
           "color": "#ffffff",
-          "name": "Base",
-          "slug": "base"
+          "name": "Cloud",
+          "slug": "cloud"
+        },
+        {
+          "color": "#3e0e58",
+          "name": "Orris",
+          "slug": "orris"
         },
         {
           "color": "#3c3a41",
-          "name": "Contrast",
-          "slug": "contrast"
+          "name": "Stone",
+          "slug": "stone"
         },
         {
-          "color": "#f8fbf3",
-          "name": "Goodjelly Green",
-          "slug": "goodjelly-green"
+          "color": "#636267",
+          "name": "Pebble",
+          "slug": "pebble"
         },
         {
-          "color": "#391255",
-          "name": "Goodjelly Purple",
-          "slug": "goodjelly-purple"
+          "color": "#a0286b",
+          "name": "Berry Root",
+          "slug": "berry-root"
         },
         {
-          "color": "#881788",
-          "name": "Alt Purple",
-          "slug": "alt-purple"
+          "color": "#752b57",
+          "name": "Berry Slate",
+          "slug": "berry-slate"
         },
         {
-          "color": "#b6b0c5",
-          "name": "Border Color",
-          "slug": "border-color"
-        },
-        {
-          "color": "#b8517f",
-          "name": "Goodjelly Mauve",
-          "slug": "goodjelly-mauve"
-        },
-	{
-	  "color": "#fff7f5",
-	  "name" : "Goodjelly Peach",
-	  "slug" : "goodjelly-peach"
-	}
+          "color": "#c48da2",
+          "name": "Berry Fog",
+          "slug": "berry-fog"
+        }
       ]
     },
     "spacing": {
@@ -64,14 +59,14 @@
       "units": ["px", "em", "rem", "vh", "vw", "%"]
     },
     "layout": {
-      "contentSize": "1260px"
+      "contentSize": "1360px"
     },
     "typography": {
       "lineHeight": true,
       "fluid": true,
       "fontFamilies": [
         {
-          "name": "Primary",
+          "name": "Primary - HK",
           "slug": "primary",
           "fontFamily": "'HK Grotesk', sans-serif",
           "fontFace": [
@@ -92,7 +87,7 @@
           ]
         },
         {
-          "name": "Header",
+          "name": "Header - Playfair",
           "slug": "header",
           "fontFamily": "'Playfair Display', serif",
           "fontFace": [
@@ -101,7 +96,7 @@
               "fontStyle": "normal",
               "fontWeight": "100 900",
               "fontDisplay": "swap",
-              "src": ["file:./assets/fonts/Playfair-Display.woff2"]
+              "src": ["file:./assets/fonts/PlayfairDisplay.woff2"]
             },
                         {
               "fontFamily": "Playfair Display",
