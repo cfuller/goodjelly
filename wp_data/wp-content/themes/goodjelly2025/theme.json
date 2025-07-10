@@ -55,6 +55,11 @@
           "slug": "grape-glow"
         },
         {
+          "color": "#f3fcfd",
+          "name": "Blueberry Glow",
+          "slug": "blueberry-glow"
+        },
+        {
           "color": "#d9c4ec",
           "name": "Grape Dollop",
           "slug": "grape-dollop"
